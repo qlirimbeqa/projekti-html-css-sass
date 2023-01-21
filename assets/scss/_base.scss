@@ -1,0 +1,117 @@
+h1 {
+    font-family:$mainfont;
+    font-size: 3.75rem;
+    line-height: 0.95;
+    font-weight: 500;
+    margin: 30px 0 0;
+}
+h2 {
+    font-family:$mainfont;
+    font-size: 2.25rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    font-weight: 700;
+}
+h4 {
+    font-family:$secondfont;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+h6 {
+    font-family:$secondfont;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-left: 20px;
+}
+p {
+    font-family: $secondfont;
+    position: relative;
+    font-size: 0.875rem;
+    margin: 50px 0 0;
+    line-height: 1.6;
+
+}
+.line {
+    border-style: solid;
+    border-color: $linecolor;
+    border-width: 3px;
+    width: 220px;
+    position: relative;
+    margin: 35px auto;
+}
+
+.container {
+    padding:0px;
+    margin:0 auto;
+    width:1140px;
+}
+
+//Image Shadow
+.image-shadow {
+    width: 640px;
+    height: 486px;
+    background-color: #e0e5eb;
+    img {
+        width: auto;
+        height: 494px;
+    }
+}
+// e gjeneruar
+input {
+    width: 50%;
+                    color: rgb(36, 35, 42);
+                    font-size: 16px;
+                    line-height: 20px;
+                    min-height: 28px;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    border: 2px solid transparent;
+                    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+                    background: rgb(251, 251, 251);
+                    transition: all 0.1s ease 0s;
+                    :focus{
+                        border: 2px solid rgb(124, 138, 255);
+                    }
+}
+// e gjeneruar
+button {
+    
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #25292b 0%, #383a4b 100% );
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    padding: 0 32px;
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    :hover {
+        box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+        transform: translateY(-2px);
+    }
+    :active{
+        box-shadow: inset 0px 3px 7px #3c4fe0;
+        transform: translateY(2px);
+    }
+    
+}
+
+//Media Query - Container
+@media screen and (max-width: 768px) {
+    .container { 
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}

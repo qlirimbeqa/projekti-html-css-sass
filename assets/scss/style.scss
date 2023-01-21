@@ -1,0 +1,338 @@
+//Fonts - Oswald 500 - Roboto 300
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap');
+
+@import 'variables';
+
+@import 'base';
+
+//Header Start
+header {
+    height:80px;
+    background-color:$mainbg;
+    nav {
+        display: block;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+
+    }
+    //Linku edhe Hover eshte i gjeneruar automatic
+    a { color:$maincolor;
+        box-shadow: inset 0 0 0 0 $secondbg;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        font-family: $mainfont;
+        
+        &:hover {
+            text-decoration: underline;
+            box-shadow: inset 100px 0 0 0 $secondbg;
+        }
+    
+    }
+    .menu-icon {
+        display: none;
+    }
+
+}
+//Header End
+// Main Start
+main {
+    background-color: $secondbg;
+    img {
+        width:100%;
+    }
+    .intro {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .teksti1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .imazhi {
+        grid-area: 1 / 3 / 4 / 6;
+    }
+    .teksti2 {
+        grid-area: 2 / 1 / 4 / 2;
+        width:80%;
+    }
+    .teksti3 {
+        grid-area: 2 / 2 / 4 / 3;
+        width:80%;
+    }
+}
+// Main End
+// Section Interior-solution Start
+section.interior-solution  {
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    img {
+  width: 100%;
+	height: 100%;
+	object-fit: cover;
+    }
+
+    img:nth-child(5) {
+        grid-area: 1 / 3 / 3 / 4;
+    }
+}
+//Section Interior-solution End
+//Section Sherbimet Start
+section.sherbimet {
+    padding: 80px 0px;
+    .div-sherbimet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        
+    }
+    .sherbimet-lista {
+        text-align: center;
+        padding: 10px;
+    }
+    img {
+        width: 100%;
+        max-width:100px;
+        align-self: center;
+        margin: 20px;
+    }
+    a {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.875rem;
+        letter-spacing: 1.2px;
+        color:$linecolor;
+        text-decoration: none;
+    }
+}
+//Section Sherbimet End
+//Section Blogu Start
+section.blogu {
+    background-color: $secondbg;
+    padding: 80px;
+    .blogu-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        align-items: start;
+      }
+      
+      .posti {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+      }
+      p {
+        margin:0px;;
+      }
+      
+      .bloguimazhi {
+        width: 100%;
+        max-width:300px;
+      }
+      
+      .bloguteksti {
+        padding: 10px;
+      }
+      
+
+}
+//Section Blogu End
+//Section Partners Start
+section.partners {
+    .partnership {
+        text-align: center;
+        height:300px;
+      }
+      
+      .iconat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .iconat img {
+        width: 50px;
+        margin: 20px 10px;
+      }
+}
+//Section Partners End
+section.subscribe {
+    .subscribe-container {
+        text-align:center;
+        margin-top:20px;
+      }
+      
+}
+//Section Contact Start
+section.contact {
+    padding:80px;
+    .contactflex {
+        display: flex;
+      }
+      
+      .left-container {
+        padding-top: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      
+      .right-container {
+        width: 50%;
+      }
+      p {
+        margin: 0px;
+        padding-left:20px;
+      }
+}
+//Footer osht i kopjuar https://codepen.io/slstudios/pen/mJqjeP
+footer.footeri {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+
+  
+     p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  
+  a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  img {
+    margin-top:7px;
+    width:60%;
+  }
+  
+  .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+  }
+}
+
+  // Media Query
+  @media screen and (max-width: 768px) {
+  
+    // e kom perdor per phone mos me u shfaq foto ne fillim
+  .image-disable {
+      display: none;
+  }
+  // Responsive Header Start
+  header {
+    nav {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+      width: 31px;
+      height: 31px;
+      background-repeat: no-repeat;
+      background-image: url('../images/icons/menufinal.png');
+      float: right; 
+    }
+    
+  }
+  // Responsive Header End
+  // Responsive Sherbimet Start
+  section.sherbimet {
+      .div-sherbimet {
+        grid-template-columns: 1fr;
+      }
+    .sherbimet-lista {
+        align-items: center;
+    }
+  }
+  // Responsive Sherbimet End
+  // Responsive Blogu Start
+  section.blogu {
+        .blogu-container {
+          grid-template-columns: 1fr;
+        }
+        .posti {
+          grid-template-columns: 1fr;
+        }
+  }
+  // Responsive Blogu End
+  // Responsive Subscribe Start
+  section.subscribe {
+      .subscribe-container {
+        flex-direction: column;
+      }
+
+  }
+  // Responsive Subscribe End
+  // Responsive Contact Start
+  section.contact {
+      .contactflex {
+        flex-direction: column;
+      }
+      .left-container {
+          margin-left:-20px;
+      }
+      .left-container, .right-container {
+        width: 100%;
+        justify-content: center;
+      }
+      p {
+          margin: 0px;
+        }
+  }
+  // Responsive Contact End
+  // Responsive Footeri Start
+  footer.footeri {
+        text-align: center;
+    
+      .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+      }
+  }
+  // Responsive Footeri End
+}
